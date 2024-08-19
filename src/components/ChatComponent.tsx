@@ -255,7 +255,6 @@ export const ChatComponent = () => {
           <Grid item xs={10}>
             <TextField
               id="prompt-input-box"
-              multiline
               label='Prompt'
               value={prompt}
               variant="standard"
@@ -263,6 +262,7 @@ export const ChatComponent = () => {
               fullWidth
               onChange={(event) => setPrompt(event.target.value)}
               disabled={disablePrompt}
+              onSubmit={sendPrompt}
             />
           </Grid>
         </Grid>
