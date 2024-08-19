@@ -28,9 +28,7 @@ export const ChatComponent = () => {
 
   const [chats, setChats] = useState<Array<ChatData>>([]);
   useEffect(() => {
-    // createNewSession(); 
-    setSessionId(10);
-    setIsLoading(false);
+    createNewSession();
   }, []);
 
 
