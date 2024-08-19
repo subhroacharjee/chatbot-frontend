@@ -258,6 +258,7 @@ export const ChatComponent = () => {
               label='Prompt'
               value={prompt}
               variant="standard"
+              type={'text'}
               InputProps={{ endAdornment: < InputAdornment position="end" > {disablePrompt ? <CircularProgress /> : <IconButton disabled={disablePrompt} onClick={sendPrompt}><Send /></IconButton>} </InputAdornment>, disableUnderline: true }}
               fullWidth
               onChange={(event) => setPrompt(event.target.value)}
